@@ -13,7 +13,7 @@ import net.withered.mccourse.MCCourseMod;
 public class ModItemGroups {
     public static final ItemGroup FLUORITE_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(MCCourseMod.MOD_ID, "fluorite"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemGroup.fluorite"))
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.fluorite"))
                     .icon(() -> new ItemStack(ModItems.FLUORITE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.FLUORITE);
                         entries.add(ModItems.RAW_FLUORITE);
@@ -21,7 +21,7 @@ public class ModItemGroups {
 
         public static final ItemGroup FLUORITE_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP,
                 Identifier.of(MCCourseMod.MOD_ID, "fluorite_blocks"),
-                FabricItemGroup.builder().displayName(Text.translatable("itemGroup.fluorite_blocks"))
+                FabricItemGroup.builder().displayName(Text.translatable("itemgroup.fluorite_blocks"))
                         .icon(() -> new ItemStack(ModItems.RAW_FLUORITE)).entries((displayContext, entries) -> {
                             entries.add(Blocks.HAY_BLOCK);
                         }).build());
