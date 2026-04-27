@@ -1,7 +1,6 @@
 package net.withered.mccourse.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -28,8 +27,13 @@ public class ModItemGroups {
 
                             entries.add(ModBlocks.FLUORITE_STAIRS);
                             entries.add(ModBlocks.FLUORITE_SLAB);
+
                             entries.add(ModBlocks.FLUORITE_BUTTON);
                             entries.add(ModBlocks.FLUORITE_PRESSURE_PLATE);
+
+                            entries.add(ModBlocks.FLUORITE_FENCE);
+                            entries.add(ModBlocks.FLUORITE_FENCE_GATE);
+                            entries.add(ModBlocks.FLUORITE_WALL);
 
                             entries.add(ModBlocks.FLUORITE_ORE);
                             entries.add(ModBlocks.FLUORITE_DEEPSLATE_ORE);

@@ -33,5 +33,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.FLUORITE_NETHER_ORE,
                         ModBlocks.FLUORITE_END_ORE
                 );
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.FLUORITE_WALL);
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.FLUORITE_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.FLUORITE_FENCE_GATE);
     }
 }

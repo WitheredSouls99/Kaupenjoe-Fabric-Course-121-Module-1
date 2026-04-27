@@ -78,6 +78,24 @@ public class ModBlocks {
                             .requiresTool()
             ));
 
+    public static final Block FLUORITE_FENCE = registerBlock("fluorite_fence",
+            new FenceBlock(
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+            ));
+
+    public static final Block FLUORITE_FENCE_GATE = registerBlock("fluorite_fence_gate",
+            new FenceGateBlock(WoodType.ACACIA,
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+            ));
+
+    public static final Block FLUORITE_WALL = registerBlock("fluorite_wall",
+            new WallBlock(
+                    AbstractBlock.Settings.create()
+                            .requiresTool()
+            ));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(MCCourseMod.MOD_ID, name), block);
