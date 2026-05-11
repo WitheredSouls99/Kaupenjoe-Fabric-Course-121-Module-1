@@ -17,6 +17,12 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.FLUORITE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.FLUORITE);
                         entries.add(ModItems.RAW_FLUORITE);
+
+                        entries.add(ModItems.FLUORITE_SWORD);
+                        entries.add(ModItems.FLUORITE_PICKAXE);
+                        entries.add(ModItems.FLUORITE_SHOVEL);
+                        entries.add(ModItems.FLUORITE_AXE);
+                        entries.add(ModItems.FLUORITE_HOE);
                     }).build());
 
         public static final ItemGroup FLUORITE_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP,
